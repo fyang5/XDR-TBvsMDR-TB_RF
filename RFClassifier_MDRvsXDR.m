@@ -163,7 +163,7 @@ ylabel('True positive rate');
 legend({'Fold1','Fold2','Fold3','Fold4','Fold5','Fold6','Fold7','Fold8','Fold9','Fold10'})
 fname5 = [sprintf('ROC_%dpatients_%d',size(part1,1),size(NodDR,2)),'features_RF.fig'];
 savefig(fname5)
-
+save rfmodel_XDRvsMDR.mat rfModel
 avgSensi = mean(sensi)
 stdSensi = std(sensi)
 avgSpeci = mean(speci)
